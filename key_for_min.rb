@@ -4,7 +4,7 @@
 def key_for_min_value(hash)
   base = 0
   lowest = {}
-  hash.collect do |name, value| :value
+  hash.each do |name, value|
     if value[base] < value[base + 1]
       lowest = value
       base = base + 1
