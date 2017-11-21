@@ -7,8 +7,8 @@ def key_for_min_value(hash)
 
     i = 0
     if i < hash.length
-      if value[i] > value[i + 1]
-        i = value[i]
+      if name.value[i] < name.value[i + 1]
+        i = name.value[i]
       end
     end
   end
