@@ -10,6 +10,6 @@ def key_for_min_value(hash)
       lowest << name[value]
     end
   end
-  return lowest
+  return lowest[value]
 
 end
