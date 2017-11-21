@@ -4,13 +4,13 @@
 def key_for_min_value(hash)
 
   hash.each do |name, value|
-
+    array = []
     i = 0
     if i < hash.length
       if name.value[i] < name.value[i + 1]
-        i = name.value[i]
+        array << name.value[i]
       end
     end
   end
-    return i
+    return array
 end
