@@ -11,6 +11,6 @@ def key_for_min_value(hash)
         array << value[i]
       end
     end
-    return array
+    return array[value]
   end
 end
