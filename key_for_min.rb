@@ -3,6 +3,7 @@
 
 def key_for_min_value(hash)
 
+  low_name = nil
   low_val = nil
 
   hash.each do |name, value|
