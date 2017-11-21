@@ -6,7 +6,7 @@ def key_for_min_value(hash)
   lowest = {}
   hash.collect do |name, value|
     if value[base] < value[base + 1]
-      lowest = value
+      lowest << value
       base = base + 1
       key_for_min_value[value]
       return lowest
