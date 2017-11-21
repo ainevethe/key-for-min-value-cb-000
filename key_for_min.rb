@@ -4,13 +4,12 @@
 def key_for_min_value(hash)
 
   hash.each do |name, value|
-    lowest = {}
-    index = 0
-    if value[index] < value[index + 1]
-      lowest = value
-      index = index + 1
-      key_for_min_value[value]
-      return lowest
+    lowest = []
+    lowest << (name,value)
+    if value < lowest
+      lowest << (name, value)
     end
   end
+  return lowest
+      
 end
