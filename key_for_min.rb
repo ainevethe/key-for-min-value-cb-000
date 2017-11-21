@@ -3,14 +3,14 @@
 
 def key_for_min_value(hash)
 
+  low_key = nil
+  low_val = nil
+
   hash.each do |name, value|
-    array = []
-    i = 0
-    if i < hash.length
-      if value[i] < value[i + 1]
-        array << value[i]
-      end
+    if low_val == nil || value < low_val
+      low_val = value
+      low_key = key
     end
-    return array[value]
   end
+  return low_key
 end
