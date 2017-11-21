@@ -7,8 +7,8 @@ def key_for_min_value(hash)
     array = []
     i = 0
     if i < hash.length
-      if name.value[i] < name.value[i + 1]
-        array << name.value[i]
+      if value[i] < value[i + 1]
+        array << value[i]
       end
     end
     return array
